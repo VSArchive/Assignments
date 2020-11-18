@@ -1,0 +1,31 @@
+<collection shelf="New Arrivals">
+    <movie title="Enemy behind">
+        <type>War, Thriller</type>
+        <format>DVD</format>
+        <year>2003</year>
+        <description>Talk about a US-Japan war</description>
+    </movie>
+
+    <movie title="Golmaal">
+        <type>Comedy</type>
+        <format>DVD</format>
+        <year>2006</year>
+        <description>A Drama Comedy</description>
+        <series no_of_link="2">
+            <link1 title="Golmaal 2">
+                <lyear>2008</lyear>
+            </link1>
+            <link2 title="Golmaal 3">
+                <lyear>2010</lyear>
+            </link2>
+        </series>
+
+    </movie>
+
+    <movie title="Ishtar">
+        <type>Comedy</type>
+        <format>VHS</format>
+        <year>2009</year>
+        <description>Viewable boredom</description>
+    </movie>
+</collection>
