@@ -1,0 +1,20 @@
+LDA 8000H
+
+ANI 01H
+
+
+JZ EVEN
+
+
+MVI A, 01H
+
+
+JMP STORE
+
+EVEN: MVI A, FFH
+
+STORE: STA 8050H
+
+
+
+HLT
