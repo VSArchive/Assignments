@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  Q4                                                                   09/28/2021 15:23:52 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Objects\Q4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Q4.asm SET(SMALL) DEBUG PRINT(.\Listings\Q4.lst) OBJECT(.\Objects\Q4.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 8000              2             SJMP MAIN
+0002 7F0A              3             MAIN: MOV R7, #0AH
+0004 7830              4     MOV R0, #30H
+0006 901030            5     MOV DPTR, #1030H
+0009 E6                6     LOOP: MOV A, @R0                  
+000A F0                7     MOVX @DPTR, a
+000B 08                8     INC R0
+000C A3                9     INC DPTR
+000D DFFA             10     DJNZ R7, LOOP
+                      11     END
+A51 MACRO ASSEMBLER  Q4                                                                   09/28/2021 15:23:52 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0009H   A   
+MAIN . . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
