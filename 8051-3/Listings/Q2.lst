@@ -1,0 +1,47 @@
+A51 MACRO ASSEMBLER  Q2                                                                   10/05/2021 14:22:46 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Objects\Q2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Q2.asm SET(SMALL) DEBUG PRINT(.\Listings\Q2.lst) OBJECT(.\Objects\Q2.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 8000              2             SJMP MAIN
+0002 900100            3             MAIN: MOV DPTR, #100H
+0005 7FFF              4     MOV R7, #0FFH
+0007 7C00              5     MOV R4, #00H
+0009 8A20              6     MOV 20H, R2
+000B 8B21              7     MOV 21H, R3
+000D E0                8     LOOP1: MOVX A, @DPTR
+000E B52102            9     CJNE A, 21H, LOOP2
+0011 800A             10     SJMP LOOP4
+0013 5008             11     LOOP2: JNC LOOP4
+0015 B52002           12     Cjne A, 20H, LOOP3
+0018 8003             13     SJMP LOOP4
+001A 4001             14     LOOP3: JC LOOP4
+001C 0C               15     INC R4
+001D A3               16     LOOP4: INC DPTR
+001E DFED             17     DJNZ R7, LOOP1
+                      18     END
+A51 MACRO ASSEMBLER  Q2                                                                   10/05/2021 14:22:46 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP1. . . . . . .  C ADDR   000DH   A   
+LOOP2. . . . . . .  C ADDR   0013H   A   
+LOOP3. . . . . . .  C ADDR   001AH   A   
+LOOP4. . . . . . .  C ADDR   001DH   A   
+MAIN . . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
