@@ -1,0 +1,46 @@
+A51 MACRO ASSEMBLER  Q3                                                                   10/26/2021 15:38:28 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Objects\Q3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Q3.asm SET(SMALL) DEBUG PRINT(.\Listings\Q3.lst) OBJECT(.\Objects\Q3.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 8000              2             SJMP START
+0002 E590              3     START: MOV A, P1
+0004 03                4     RR A
+0005 F590              5     MOV P1, A
+0007 110B              6     ACALL DELAY
+0009 80F7              7     SJMP START
+                       8     
+000B 780A              9     DELAY: MOV R0, #10
+000D 79C8             10     NXT1: MOV R1, #200
+000F 7AFA             11     NXT2: MOV R2, #250
+0011 DAFE             12     NXT3: DJNZ R2, NXT3
+0013 D9FA             13                     DJNZ R1, NXT2
+0015 D8F6             14                     DJNZ R0, NXT1
+0017 22               15     RET
+                      16     END
+A51 MACRO ASSEMBLER  Q3                                                                   10/26/2021 15:38:28 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   000BH   A   
+NXT1 . . . . . . .  C ADDR   000DH   A   
+NXT2 . . . . . . .  C ADDR   000FH   A   
+NXT3 . . . . . . .  C ADDR   0011H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+START. . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
