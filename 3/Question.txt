@@ -1,0 +1,2 @@
+1. Write a program to show the Voronoi regions for a given set of points.
+2. Modify the program to show the Delaunay triangulation or vice versa (which is better according to you).

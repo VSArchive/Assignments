@@ -1,0 +1,2 @@
+Let's have fun today!
+Write a program that will evaluate the O time complexity of a given input C program.

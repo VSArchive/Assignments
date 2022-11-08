@@ -1,0 +1,1 @@
+Implement knapsack problem using branch and bound algorithm. Randomly generate number of objects (in a reasonable range) and knapsack size.

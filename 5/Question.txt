@@ -1,0 +1,1 @@
+Write a program to bring a binary matrix in the RREF form till possible. Try to minimize the complexity of your program as cleverly as you can and state the final complexity.
