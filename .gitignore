@@ -9,3 +9,6 @@
 a.out
 *.o
 output.txt
+*.class
+*.png
+*.jpg
