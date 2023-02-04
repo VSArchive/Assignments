@@ -3,3 +3,9 @@
 *.htm
 *.Vineel
 *.uvopt
+.vscode
+*.zip
+*.yy.c
+a.out
+*.o
+output.txt
