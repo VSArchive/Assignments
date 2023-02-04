@@ -1,0 +1,5 @@
+import matplotlib.pyplot as plt
+n_groups = 4
+means_guido = (85, 62, 54, 20)
+fig, ax = plt.subplots()
+bar_width = 0.25

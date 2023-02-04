@@ -1,0 +1,6 @@
+import numpy as np
+# data to plot
+means_frank = (90, 55, 40, 65)
+# create plot
+index = np.arange(n_groups)
+opacity = 0.8

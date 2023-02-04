@@ -12,3 +12,5 @@ output.txt
 *.class
 *.png
 *.jpg
+venv
+.idea
