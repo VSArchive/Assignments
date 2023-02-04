@@ -1,0 +1,35 @@
+A51 MACRO ASSEMBLER  Q2                                                                   09/28/2021 15:34:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Objects\Q2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Q2.asm SET(SMALL) DEBUG PRINT(.\Listings\Q2.lst) OBJECT(.\Objects\Q2.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 8000              2             SJMP MAIN
+0002 C3                3             MAIN: CLR C
+0003 EC                4     MOV A, R4
+0004 9E                5     SUBB A, R6
+0005 F534              6     MOV 34H, A
+0007 ED                7     MOV A, R5
+0008 9F                8     SUBB A, R7
+0009 F535              9     MOV 35H, A
+                      10     END
+A51 MACRO ASSEMBLER  Q2                                                                   09/28/2021 15:34:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+MAIN . . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

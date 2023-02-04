@@ -1,0 +1,19 @@
+MVI B, 0
+MVI C, 8
+MVI D, 1	
+
+LXI H, 8C00H
+MOV M, B	
+INX H	
+MOV M, D	
+
+LOOP: MOV A, B	
+ADD D	
+MOV B, D	
+MOV D, A	
+INX H	
+MOV M, A	
+DCR C	
+JNZ LOOP
+		
+HLT

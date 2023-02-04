@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  Q1                                                                   11/02/2021 15:00:15 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Objects\Q1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Q1.asm SET(SMALL) DEBUG PRINT(.\Listings\Q1.lst) OBJECT(.\Objects\Q1.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 8000              2             SJMP START
+0002 E8                3     START: MOV A, R0
+0003 B4FF02            4     CJNE A, #0FFH, SKIP
+0006 7DFF              5     MOV R5, #0FFH
+0008 7E00              6     SKIP: MOV R6, #00H
+                       7     END
+A51 MACRO ASSEMBLER  Q1                                                                   11/02/2021 15:00:15 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+SKIP . . . . . . .  C ADDR   0008H   A   
+START. . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
